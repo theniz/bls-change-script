@@ -1,0 +1,4 @@
+# 다음 명령어를 실행
+# Mnemonic 문구는 앞뒤에 따옴표 있어야 함
+# 출금주소는 따옴표 없어야 함
+./ethdo validator credentials set --offline --mnemonic="여기에 니모닉 문구 입력" --withdrawal-address=출금주소
