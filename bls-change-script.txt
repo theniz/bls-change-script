@@ -1,4 +1,20 @@
-# 다음 명령어를 실행
+# 오프라인 PC에서 이 파일을 열었으면 
+# USB에 있는 ethdo-1.28.4-linux-amd64.tar.gz 과 offline-preparation.json 파일 2개를 Documents 폴더로 복사
+
+# 터미널을 열고,
+# 다음 명령을 실행
+cd Documents
+
+# ethdo 압축 풀기
+tar -zxf ethdo-1.28.4-linux-amd64.tar.gz
+
+# 최종적으로 다음 명령 실행
 # Mnemonic 문구는 앞뒤에 따옴표 있어야 함
 # 출금주소는 따옴표 없어야 함
+
 ./ethdo validator credentials set --offline --mnemonic="여기에 니모닉 문구 입력" --withdrawal-address=출금주소
+
+# 실행 후 생성된 change-operations.json 파일을 다시 USB로 복사
+
+# 마지막으로 다음 명령 실행 후 시스템 종료
+history -c
